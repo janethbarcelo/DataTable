@@ -1,6 +1,8 @@
-<table datatable class="row-border hover">
+<table class="row-border hover">
   <link rel="stylesheet" href="component-tabla.component.css">
   <thead>
+
+
     <tr>
       <th>ID</th>
       <th>First name</th>
@@ -8,66 +10,31 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>1</td>
-      <td>MARICELA</td>
-      <td>BASURTO</td>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{ user.name }}</td>
+      <td>{{user.username}}</td>
     </tr>
-    <tr>
-      <td>2</td>
-      <td>JUAN</td>
-      <td>LONGORIA</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>ERICK</td>
-      <td>CASANOVA</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>YOLANDA</td>
-      <td>SALGADO</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>PATRICIO</td>
-      <td>DUARTE</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>PALOMA</td>
-      <td>LOPEZ</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>FRANCISCO</td>
-      <td>ESPINOSA</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>MICHEL</td>
-      <td>JACKSON</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>CAROLINA</td>
-      <td>NORRIS</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>SOFIA</td>
-      <td>VERGARA</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>LUIS</td>
-      <td>ALFONSO</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>ZENDAYA</td>
-      <td>CERVANTES</td>
-    </tr>
+
   </tbody>
 </table>
 
+
+
+<table class="row-border hover">
+  <link rel="stylesheet" href="component-tabla.component.css">
+  <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+  <thead>
+    <tr>
+
+      <th>ID</th>
+      <th>First name</th>
+      <th>Last name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let agencia of agencias">
+    </tr>
+
+  </tbody>
+</table>

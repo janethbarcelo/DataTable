@@ -4,15 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ComponentTablaComponent } from './component-tabla/component-tabla.component';
 import { DataTablesModule } from "angular-datatables";
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ComponentTablaComponent
+    ComponentTablaComponent,
+
   ],
   imports: [
     BrowserModule,
-    DataTablesModule
+    DataTablesModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

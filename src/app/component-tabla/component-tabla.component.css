@@ -1,7 +1,52 @@
-table{
-  background-color: rgb(172, 240, 149);
-  color: rgb(127, 127, 145);
+table {
+  table-layout: fixed;
+  width: 100%;
+  border: 3px solid rgb(54, 75, 181);
   border-radius: 15px;
-  border-width: 15px;
+  background-color:rgb(175, 212, 235);
 
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th, td {
+  padding: 20px;
+}
+
+html {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+thead th, tfoot th {
+  font-family: 'Rock Salt', cursive;
+}
+
+th {
+  letter-spacing: 5px;
+}
+
+td {
+  letter-spacing: 2px;
+}
+
+tbody td {
+  text-align:left;
+}
+
+tfoot th {
+  text-align:left;
 }
