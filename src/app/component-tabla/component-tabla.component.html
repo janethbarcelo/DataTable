@@ -1,40 +1,42 @@
 <table class="row-border hover">
   <link rel="stylesheet" href="component-tabla.component.css">
   <thead>
-
+    <div class = "container">
 
     <tr>
       <th>ID</th>
       <th>First name</th>
       <th>Last name</th>
     </tr>
-  </thead>
+
+
   <tbody>
     <tr *ngFor="let user of users">
       <td>{{user.id}}</td>
       <td>{{ user.name }}</td>
       <td>{{user.username}}</td>
     </tr>
-
   </tbody>
-</table>
+    </div>
 
-
-
+<tr>
 <table class="row-border hover">
   <link rel="stylesheet" href="component-tabla.component.css">
   <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
   <thead>
+    <div class="contenedor">
     <tr>
 
       <th>ID</th>
       <th>First name</th>
       <th>Last name</th>
     </tr>
-  </thead>
+
   <tbody>
     <tr *ngFor="let agencia of agencias">
     </tr>
-
   </tbody>
-</table>
+    </div>
+
+
+    // interpolacion con {{}} para llamar una variable o propiedad  -->
